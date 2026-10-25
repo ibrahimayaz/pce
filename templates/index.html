@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCE Prediction Interface</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="bg-shape bg-shape-a" aria-hidden="true"></div>
+    <div class="bg-shape bg-shape-b" aria-hidden="true"></div>
+    <div class="bg-noise" aria-hidden="true"></div>
+
+    <main class="page-shell">
+        <header class="hero">
+            <div>
+                <p class="hero-tag">Research Prediction Panel</p>
+                <h1>PCE Prediction</h1>
+                <p class="hero-subtitle">Model-based estimation of Y1 and Y2 from material and mixture inputs.</p>
+            </div>
+            <div class="hero-stats" aria-label="Feature summary">
+                <article>
+                    <strong>{{ input_feature_count }}</strong>
+                    <span>Inputs</span>
+                </article>
+                <article>
+                    <strong>2</strong>
+                    <span>Targets</span>
+                </article>
+            </div>
+        </header>
+
+        {% if artifact_error %}
+            <section class="alert alert-error">
+                <h2>Artifact Loading Error</h2>
+                <p>{{ artifact_error }}</p>
+            </section>
+        {% endif %}
+
+        {% if prediction_error %}
+            <section class="alert alert-error">
+                <h2>Prediction Error</h2>
+                <p>{{ prediction_error }}</p>
+            </section>
+        {% endif %}
+
+        <section class="panel">
+            <form method="post" class="feature-form">
+                <div class="section-head">
+                    <h2>Input Variables</h2>
+                </div>
+
+                <div class="form-grid">
+                    {% for column in feature_columns %}
+                        <label class="field">
+                            <span class="field-title">{{ column }} <em>({{ feature_labels[column] }})</em></span>
+                            <input
+                                type="text"
+                                name="{{ column }}"
+                                value="{{ values[column] }}"
+                                class="{% if field_errors.get(column) %}is-error{% endif %}"
+                                placeholder="Numeric value"
+                                autocomplete="off"
+                                inputmode="decimal"
+                            >
+                            {% if field_errors.get(column) %}
+                                <small>{{ field_errors[column] }}</small>
+                            {% endif %}
+                        </label>
+                    {% endfor %}
+                </div>
+
+                <div class="actions">
+                    <button type="reset" class="ghost">Reset</button>
+                    <button type="submit">Predict</button>
+                </div>
+            </form>
+        </section>
+
+        {% if result %}
+            <section class="results">
+                <article class="result-card">
+                    <h2>Predicted Y1 (Marsh Funnel Flow Time)</h2>
+                    <p>{{ '%.6f'|format(result['Y1']) }}</p>
+                </article>
+                <article class="result-card">
+                    <h2>Predicted Y2 (Mini Slump Value)</h2>
+                    <p>{{ '%.6f'|format(result['Y2']) }}</p>
+                </article>
+            </section>
+        {% endif %}
+
+    </main>
+</body>
+</html>

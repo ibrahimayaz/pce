@@ -1,0 +1,23 @@
+# Experiment outputs (tables and plots) are kept locally, not published
+results/
+
+# Old monolithic script
+legacy/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Model training logs
+catboost_info/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Office lock files
+~$*

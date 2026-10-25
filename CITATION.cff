@@ -1,0 +1,56 @@
+cff-version: 1.2.0
+message: >-
+  Use of the software, dataset or pre-trained models in this repository
+  requires citing the main article below. Commercial use is not permitted.
+title: "PCE Fresh-State Property Predictor"
+type: software
+license: CC-BY-NC-4.0
+authors:
+  - given-names: İbrahim
+    family-names: Ayaz
+    affiliation: "Department of Computer Technologies, Bitlis Eren University, Bitlis 13100, Türkiye"
+  - given-names: Serdar
+    family-names: Ekinci
+    affiliation: "Department of Computer Engineering, Bitlis Eren University, Bitlis 13100, Türkiye"
+  - given-names: Davut
+    family-names: Izci
+    affiliation: "Department of Electrical and Electronic Engineering, Bursa Uludag University, Bursa 16059, Türkiye"
+  - given-names: Mahmoud
+    family-names: Abdel-Salam
+    affiliation: "Faculty of Computer and Information Science, Mansoura University, Mansoura 35516, Egypt"
+  - given-names: Muhammed İkbal
+    family-names: Şahin
+    affiliation: "Department of Electrical and Electronic Engineering, Bursa Uludag University, Bursa 16059, Türkiye"
+  - given-names: Hakan
+    family-names: Çoban
+    affiliation: "Faculty of Computer and Information Science, Mansoura University, Mansoura 35516, Egypt"
+  - given-names: Selin
+    family-names: Özteber
+    affiliation: "Department of Civil Engineering, Bursa Uludag University, Bursa 16059, Türkiye"
+  - given-names: Ali
+    family-names: Mardani
+    affiliation: "Department of Civil Engineering, Bursa Uludag University, Bursa 16059, Türkiye"
+preferred-citation:
+  type: article
+  title: >-
+    Equilibrium Optimizer-Tuned Machine Learning Models for Predicting
+    Fresh-State Properties of PCE-Modified Cement-Fly Ash Systems:
+    A SHAP-Based Interpretation
+  authors:
+    - given-names: İbrahim
+      family-names: Ayaz
+    - given-names: Serdar
+      family-names: Ekinci
+    - given-names: Davut
+      family-names: Izci
+    - given-names: Mahmoud
+      family-names: Abdel-Salam
+    - given-names: Muhammed İkbal
+      family-names: Şahin
+    - given-names: Hakan
+      family-names: Çoban
+    - given-names: Selin
+      family-names: Özteber
+    - given-names: Ali
+      family-names: Mardani
+  # TODO: add journal, year, volume, pages and doi once the article is published

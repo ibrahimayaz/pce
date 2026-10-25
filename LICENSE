@@ -1,0 +1,62 @@
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+==========================================================================
+
+Copyright (c) 2026 İbrahim Ayaz, Serdar Ekinci, Davut Izci, Mahmoud Abdel-Salam,
+Muhammed İkbal Şahin, Hakan Çoban, Selin Özteber, Ali Mardani
+
+Scope
+-----
+This license applies to the entire contents of this repository, including:
+  - the source code (e.g. `app.py`, `main.py`, `src/`, `templates/`, `static/`),
+  - the experimental dataset in `data/` (including `data/dataset.csv`),
+  - the pre-trained model artifacts in `models/` (`*.pkl`), and
+  - the figures and diagrams in `docs/`,
+together with any derived or modified versions of them.
+
+License
+-------
+These materials are licensed under the Creative Commons
+Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
+
+  Human-readable summary: https://creativecommons.org/licenses/by-nc/4.0/
+  Full legal code:        https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+You are free to share (copy and redistribute) and adapt (remix, transform and
+build upon) the materials under the following terms:
+
+NonCommercial
+-------------
+You may not use the materials, or any derived or modified version of them,
+for commercial purposes. Commercial purposes include, but are not limited to,
+selling the materials or services based on them, integrating them into
+commercial products or software, and using them for paid consulting or
+commercial production. Commercial use requires prior written permission from
+the authors (corresponding author: Ali Mardani, Department of Civil
+Engineering, Bursa Uludag University).
+
+Attribution / Mandatory citation
+--------------------------------
+As the manner of attribution required under Section 3(a) of CC BY-NC 4.0, any
+use of the dataset, the pre-trained models or the software, in whole or in
+part, including in publications, theses, reports, software, derived datasets
+or retrained models, MUST cite the following main article:
+
+  İ. Ayaz, S. Ekinci, D. Izci, M. Abdel-Salam, M. İ. Şahin, H. Çoban,
+  S. Özteber, A. Mardani, "Equilibrium Optimizer-Tuned Machine Learning Models
+  for Predicting Fresh-State Properties of PCE-Modified Cement-Fly Ash Systems:
+  A SHAP-Based Interpretation", (journal, volume, pages, year and DOI to be
+  updated upon publication).
+
+In addition, you must:
+  - provide a link to the CC BY-NC 4.0 license, and
+  - indicate if changes were made.
+
+Redistributions of the materials must retain this file.
+
+Disclaimer
+----------
+The materials are provided "as is", without warranty of any kind, express or
+implied. In no event shall the authors be liable for any claim, damages or
+other liability arising from the use of the materials. Predictions produced
+by the models are intended for research purposes and do not replace
+laboratory testing.

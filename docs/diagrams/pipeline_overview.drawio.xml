@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Methodology Pipeline">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Data Loading -->
+        <mxCell id="2" value="Data Loading&#xa;(Cleaning optional)" style="rounded=1;fillColor=#2F80ED;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="180" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Imputation -->
+        <mxCell id="3" value="Missing Value Imputation" style="rounded=1;fillColor=#56CCF2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="40" width="180" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Split -->
+        <mxCell id="4" value="Feature / Target Split&#xa;(X, Y1, Y2)" style="rounded=1;fillColor=#6FCF97;" vertex="1" parent="1">
+          <mxGeometry x="480" y="40" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Standardization -->
+        <mxCell id="5" value="Standardization&#xa;(Full Dataset)" style="rounded=1;fillColor=#9B51E0;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="720" y="40" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Loop Title -->
+        <mxCell id="6" value="Per-Target Modeling (Y1, Y2)" style="text;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="130" width="300" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Feature Selection -->
+        <mxCell id="7" value="Feature Selection" style="rounded=1;fillColor=#F2C94C;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="180" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Optimization -->
+        <mxCell id="8" value="Hyperparameter Optimization (EO)" style="rounded=1;fillColor=#BB6BD9;" vertex="1" parent="1">
+          <mxGeometry x="260" y="180" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Training -->
+        <mxCell id="9" value="Model Training &amp; Evaluation&#xa;(Cross Validation + OOF)" style="rounded=1;fillColor=#27AE60;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="500" y="180" width="240" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Best Model -->
+        <mxCell id="10" value="Best Model Selection&#xa;&amp; Retraining" style="rounded=1;fillColor=#F2994A;" vertex="1" parent="1">
+          <mxGeometry x="780" y="180" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Analysis -->
+        <mxCell id="11" value="Detailed Analysis&#xa;(SHAP, Learning Curve, Plots)" style="rounded=1;fillColor=#6FCF97;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="180" width="260" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Outputs -->
+        <mxCell id="12" value="Outputs&#xa;- Metrics&#xa;- Predictions&#xa;- Model&#xa;- Plots&#xa;- Scaler" style="rounded=1;fillColor=#E0E0E0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="300" width="260" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrows -->
+        <mxCell id="20" edge="1" parent="1" source="2" target="3"/>
+        <mxCell id="21" edge="1" parent="1" source="3" target="4"/>
+        <mxCell id="22" edge="1" parent="1" source="4" target="5"/>
+        <mxCell id="23" edge="1" parent="1" source="5" target="7"/>
+        <mxCell id="24" edge="1" parent="1" source="7" target="8"/>
+        <mxCell id="25" edge="1" parent="1" source="8" target="9"/>
+        <mxCell id="26" edge="1" parent="1" source="9" target="10"/>
+        <mxCell id="27" edge="1" parent="1" source="10" target="11"/>
+        <mxCell id="28" edge="1" parent="1" source="9" target="12"/>
+        <mxCell id="29" edge="1" parent="1" source="10" target="12"/>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
