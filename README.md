@@ -19,7 +19,9 @@ manuscript Access-2026-47475):
 | **Dataset (DOI)** | IEEE DataPort, [doi: 10.21227/fjdp-ss56](https://dx.doi.org/10.21227/fjdp-ss56) |
 | **Code** | this repository |
 
-![Methodology](docs/figures/methodology.png)
+<p align="center">
+  <img src="docs/figures/methodology.png" width="460" alt="Methodology: leakage-free nested cross-validation workflow">
+</p>
 
 ---
 
