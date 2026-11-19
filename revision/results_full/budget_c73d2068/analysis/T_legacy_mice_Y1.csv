@@ -1,0 +1,5 @@
+Model,Tuner,Original procedure: scored on all rows (incl. imputed targets),Original procedure: scored on measured rows only,"Corrected procedure (measured only, nested)",n_imputed_target_rows
+CatBoost,Default,R2 0.9433 / RMSE 8.8849,R2 0.9433 / RMSE 8.8849,R2 0.9439 / RMSE 8.8392,0
+LightGBM,Default,R2 0.9298 / RMSE 9.8853,R2 0.9298 / RMSE 9.8853,R2 0.9302 / RMSE 9.8539,0
+CatBoost,EO,R2 0.9545 / RMSE 7.9530,R2 0.9545 / RMSE 7.9530,R2 0.9542 / RMSE 7.9874,0
+LightGBM,EO,R2 0.9342 / RMSE 9.5704,R2 0.9342 / RMSE 9.5704,R2 0.9346 / RMSE 9.5374,0

@@ -1,12 +1,13 @@
 # Dataset Description
 
 > **Mandatory citation:** Any use of this dataset, in whole or in part, requires citing the main article:
-> *Equilibrium Optimizer-Tuned Machine Learning Models for Predicting Fresh-State Properties of PCE-Modified Cement-Fly Ash Systems: A SHAP-Based Interpretation* (İ. Ayaz, S. Ekinci, D. Izci, M. Abdel-Salam, M. İ. Şahin, H. Çoban, S. Özteber, A. Mardani).
+> *Predicting Marsh Funnel Flow Time and Mini-Slump of Fly Ash–Cement Pastes from PCE Superplasticizer Descriptors: Equilibrium Optimizer-Tuned Models under Nested and Leave-One-Admixture-Out Validation with SHAP Interpretation* (İ. Ayaz, S. Ekinci, D. Izci, M. Abdel-Salam, M. İ. Şahin, H. Çoban, S. Özteber, A. Mardani).
 > License: [CC BY-NC 4.0](../LICENSE) — commercial use is not permitted.
+> The dataset is also archived on IEEE DataPort: doi: [10.21227/fjdp-ss56](https://dx.doi.org/10.21227/fjdp-ss56).
 
-This dataset was obtained from a comprehensive experimental program conducted to investigate the effects of mixture components, such as the amounts of cement, mineral admixture, aggregate, water and water-reducing admixture, on the flow time and mini-slump value of cementitious mixtures.
+This dataset was obtained from an experimental program on the fresh-state compatibility of fly ash–cement pastes with polycarboxylate ether (PCE) superplasticizers. The program followed a full-factorial design: 22 PCEs × 4 fly-ash replacement levels (0, 15, 30 and 45 % by mass of binder) × 7 PCE dosages (0.5, 0.75, 1.0, 1.25, 1.5, 1.75 and 2.0 % by mass of binder) = 616 pastes. One portland cement and one fly ash were used, the binder mass was 700 g and the mixing water was 245 g (w/b = 0.35).
 
-The experimental approach is based on standardized laboratory tests performed on cementitious systems with different material compositions. All mixtures were evaluated in terms of flow time and mini-slump values. Material amounts reported in the study are given in grams `(g)`.
+The experimental approach is based on standardized laboratory tests performed on cementitious systems with different material compositions. Material amounts are given in grams `(g)`. The mixture identifier (`index`) encodes the fly-ash level, the admixture and the PCE dosage, e.g. `UK15-K4:1-1,0` = 15 % fly ash, admixture K4:1, 1.0 % PCE.
 
 ## Input Variables
 
@@ -34,8 +35,8 @@ The main input parameters considered in this study are as follows:
 | X18 | Viscosity | Viscosity of the water-reducing admixture |
 | X19 | Cement | Amount of cement |
 | X20 | Fly Ash | Amount of fly ash |
-| X21 | Water | Amount of water |
-| X22 | Water-Reducing Admixture | Amount of admixture |
+| X21 | PCE dosage | Amount of PCE admixture (3.5–14 g = 0.5–2.0 % of the 700 g binder) |
+| X22 | Water | Amount of mixing water (245 g in every row, w/b = 0.35) |
 
 ## Output Variables
 
@@ -43,8 +44,8 @@ The following measured values of the different mixtures were defined as the outp
 
 | Abbreviation | Description |
 |---|---|
-| Y1 | Marsh-funnel flow time |
-| Y2 | Mini-slump value |
+| Y1 | Marsh funnel flow time (s); measured for all 616 pastes |
+| Y2 | Mini-slump spread (cm); measured for 252 pastes (all 28 pastes of 9 admixtures) |
 
 These output variables are predicted from the input parameters described above.
 
@@ -65,4 +66,11 @@ This dataset can be used to investigate the relationship between material proper
 - `X1`–`X22`: input variables
 - `Y1`, `Y2`: output variables
 
-A dash (`-`) denotes a missing value.
+A dash (`-`) has two meanings:
+
+- in **X20**: mixture without fly ash (structural zero; use 0 g);
+- in **Y2**: mini-slump not measured. Y2 is missing block-wise for all pastes of 13 admixtures and should not be imputed.
+
+Because one cement, one fly ash and a fixed water content were used, X1–X12 and X22 are constant; X19 + X20 = 700 g in every row. Each admixture has its own combination of X13–X18 (22 distinct descriptor sets).
+
+> **Note.** In the first version of this repository X21 was labelled as water and X22 as admixture amount. The labels above are the corrected ones (X21 equals the dosage encoded in the mixture identifier for all 616 rows).

@@ -1,0 +1,4 @@
+# GUI runtime for deployment (revised pipelines need xgboost only if XGBoost is a final model)
+-r requirements.txt
+xgboost==3.2.0
+gunicorn==23.0.0

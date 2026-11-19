@@ -5,6 +5,8 @@ message: >-
 title: "PCE Fresh-State Property Predictor"
 type: software
 license: CC-BY-NC-4.0
+repository-code: "https://github.com/ibrahimayaz/pce"
+url: "https://huggingface.co/spaces/ibrahimayaz/pce-predictor"
 authors:
   - given-names: İbrahim
     family-names: Ayaz
@@ -23,7 +25,7 @@ authors:
     affiliation: "Department of Electrical and Electronic Engineering, Bursa Uludag University, Bursa 16059, Türkiye"
   - given-names: Hakan
     family-names: Çoban
-    affiliation: "Faculty of Computer and Information Science, Mansoura University, Mansoura 35516, Egypt"
+    affiliation: "Department of Civil Engineering, Faculty of Engineering and Architecture, Bitlis Eren University, Bitlis 13100, Türkiye"
   - given-names: Selin
     family-names: Özteber
     affiliation: "Department of Civil Engineering, Bursa Uludag University, Bursa 16059, Türkiye"
@@ -33,9 +35,10 @@ authors:
 preferred-citation:
   type: article
   title: >-
-    Equilibrium Optimizer-Tuned Machine Learning Models for Predicting
-    Fresh-State Properties of PCE-Modified Cement-Fly Ash Systems:
-    A SHAP-Based Interpretation
+    Predicting Marsh Funnel Flow Time and Mini-Slump of Fly Ash–Cement Pastes
+    from PCE Superplasticizer Descriptors: Equilibrium Optimizer-Tuned Models
+    under Nested and Leave-One-Admixture-Out Validation with SHAP Interpretation
+  journal: "IEEE Access"
   authors:
     - given-names: İbrahim
       family-names: Ayaz
@@ -53,4 +56,4 @@ preferred-citation:
       family-names: Özteber
     - given-names: Ali
       family-names: Mardani
-  # TODO: add journal, year, volume, pages and doi once the article is published
+  # Under review (manuscript Access-2026-47475); year, volume, pages and doi to be added upon publication

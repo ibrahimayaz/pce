@@ -1,0 +1,20 @@
+{
+ "total": 1959,
+ "done": 1959,
+ "failed": 0,
+ "running": 0,
+ "blocks": {
+  "final": "10/10",
+  "rkf_main": "300/300",
+  "lopo": "280/280",
+  "rkf_tuners": "300/300",
+  "lofa": "80/80",
+  "nodup_rkf": "150/150",
+  "base_mixonly": "180/180",
+  "base_pceid": "180/180",
+  "nodup_lopo": "95/95",
+  "base_mixonly_lopo": "84/84",
+  "legacy_mice": "120/120",
+  "sens": "180/180"
+ }
+}

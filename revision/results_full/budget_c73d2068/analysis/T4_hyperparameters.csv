@@ -1,0 +1,21 @@
+Model,Hyperparameter,Range,Optimum Y1,Tuning time Y1 (s),Optimum Y2,Tuning time Y2 (s)
+LightGBM,n_estimators,"[20, 150]",150.0,106.6,150.0,54.6
+LightGBM,max_depth,"[2, 5]",5.0,106.6,5.0,54.6
+LightGBM,learning_rate,"[0.001, 0.1]",0.1,106.6,0.1,54.6
+LightGBM,reg_alpha,"[0.1, 10.0]",0.1533,106.6,0.1017,54.6
+LightGBM,reg_lambda,"[0.1, 10.0]",0.1436,106.6,0.1491,54.6
+CatBoost,iterations,"[50, 150]",150.0,792.5,146.0,877.4
+CatBoost,depth,"[2, 5]",3.0,792.5,5.0,877.4
+CatBoost,learning_rate,"[0.001, 0.1]",0.0983,792.5,0.1,877.4
+CatBoost,l2_leaf_reg,"[1.0, 10.0]",1.0008,792.5,2.1473,877.4
+XGBoost,n_estimators,"[20, 150]",144.0,115.6,147.0,120.7
+XGBoost,max_depth,"[2, 5]",3.0,115.6,3.0,120.7
+XGBoost,learning_rate,"[0.001, 0.1]",0.0998,115.6,0.0995,120.7
+XGBoost,reg_alpha,"[0.1, 10.0]",0.2704,115.6,0.1151,120.7
+XGBoost,reg_lambda,"[0.1, 10.0]",0.9106,115.6,0.1005,120.7
+AdaBoost,n_estimators,"[20, 100]",39.0,649.9,85.0,636.6
+AdaBoost,learning_rate,"[0.01, 0.5]",0.0937,649.9,0.4983,636.6
+MLP,hidden_layer_size_1,"[16, 128]",47.0,1446.0,117.0,819.2
+MLP,hidden_layer_size_2,"[8, 64]",64.0,1446.0,41.0,819.2
+MLP,alpha,"[0.01, 1.0]",0.4207,1446.0,0.7369,819.2
+MLP,learning_rate_init,"[0.0001, 0.05]",0.05,1446.0,0.0493,819.2

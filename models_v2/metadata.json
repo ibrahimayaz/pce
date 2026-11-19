@@ -1,0 +1,371 @@
+{
+ "created": "2026-11-19 10:28:07",
+ "profile": "full",
+ "budget": "c73d2068",
+ "sklearn_version": "1.3.2",
+ "targets": {
+  "Y1": {
+   "model": "CatBoost",
+   "name": "Marsh funnel flow time",
+   "unit": "s",
+   "selected_features": [
+    "X21",
+    "X19",
+    "X16",
+    "X20",
+    "X18",
+    "X14",
+    "X13",
+    "X17",
+    "X15"
+   ],
+   "nested_cv": {
+    "R2": "0.9538 \u00b1 0.0217",
+    "RMSE": "7.6849 \u00b1 2.1725"
+   }
+  },
+  "Y2": {
+   "model": "CatBoost",
+   "name": "Mini-slump spread",
+   "unit": "cm",
+   "selected_features": [
+    "X21",
+    "X19",
+    "X18",
+    "X20",
+    "X17",
+    "X14",
+    "X15",
+    "X13",
+    "X16"
+   ],
+   "nested_cv": {
+    "R2": "0.7844 \u00b1 0.0683",
+    "RMSE": "0.4560 \u00b1 0.0433"
+   }
+  }
+ },
+ "inputs": {
+  "X1": {
+   "name": "C3S",
+   "unit": "%",
+   "min": 47.6,
+   "max": 47.6,
+   "constant": true,
+   "default": 47.6,
+   "levels": [
+    47.6
+   ]
+  },
+  "X2": {
+   "name": "C2S",
+   "unit": "%",
+   "min": 20.22,
+   "max": 20.22,
+   "constant": true,
+   "default": 20.22,
+   "levels": [
+    20.22
+   ]
+  },
+  "X3": {
+   "name": "C3A",
+   "unit": "%",
+   "min": 3.6,
+   "max": 3.6,
+   "constant": true,
+   "default": 3.6,
+   "levels": [
+    3.6
+   ]
+  },
+  "X4": {
+   "name": "C4AF",
+   "unit": "%",
+   "min": 16.04,
+   "max": 16.04,
+   "constant": true,
+   "default": 16.04,
+   "levels": [
+    16.04
+   ]
+  },
+  "X5": {
+   "name": "Specific surface area of cement",
+   "unit": "cm2/g",
+   "min": 3754.0,
+   "max": 3754.0,
+   "constant": true,
+   "default": 3754.0,
+   "levels": [
+    3754.0
+   ]
+  },
+  "X6": {
+   "name": "Specific gravity of cement",
+   "unit": "-",
+   "min": 3.2,
+   "max": 3.2,
+   "constant": true,
+   "default": 3.2,
+   "levels": [
+    3.2
+   ]
+  },
+  "X7": {
+   "name": "SiO2 (fly ash)",
+   "unit": "%",
+   "min": 59.22,
+   "max": 59.22,
+   "constant": true,
+   "default": 59.22,
+   "levels": [
+    59.22
+   ]
+  },
+  "X8": {
+   "name": "Al2O3 (fly ash)",
+   "unit": "%",
+   "min": 22.86,
+   "max": 22.86,
+   "constant": true,
+   "default": 22.86,
+   "levels": [
+    22.86
+   ]
+  },
+  "X9": {
+   "name": "Fe2O3 (fly ash)",
+   "unit": "%",
+   "min": 6.31,
+   "max": 6.31,
+   "constant": true,
+   "default": 6.31,
+   "levels": [
+    6.31
+   ]
+  },
+  "X10": {
+   "name": "CaO (fly ash)",
+   "unit": "%",
+   "min": 3.09,
+   "max": 3.09,
+   "constant": true,
+   "default": 3.09,
+   "levels": [
+    3.09
+   ]
+  },
+  "X11": {
+   "name": "Specific surface area of fly ash",
+   "unit": "cm2/g",
+   "min": 4300.0,
+   "max": 4300.0,
+   "constant": true,
+   "default": 4300.0,
+   "levels": [
+    4300.0
+   ]
+  },
+  "X12": {
+   "name": "Specific gravity of fly ash",
+   "unit": "-",
+   "min": 2.31,
+   "max": 2.31,
+   "constant": true,
+   "default": 2.31,
+   "levels": [
+    2.31
+   ]
+  },
+  "X13": {
+   "name": "PCE density",
+   "unit": "dataset scale",
+   "min": 1076.0,
+   "max": 3800.0,
+   "constant": false,
+   "default": 1080.0,
+   "levels": [
+    1076.0,
+    1078.0,
+    1080.0,
+    1082.0,
+    1084.0,
+    1090.0,
+    3210.0,
+    3220.0,
+    3250.0,
+    3260.0,
+    3800.0
+   ]
+  },
+  "X14": {
+   "name": "PCE solid content",
+   "unit": "%",
+   "min": 39.95,
+   "max": 40.98,
+   "constant": false,
+   "default": 40.78,
+   "levels": [
+    39.95,
+    39.96,
+    39.97,
+    40.07,
+    40.12,
+    40.14,
+    40.15,
+    40.16,
+    40.19,
+    40.55,
+    40.56,
+    40.65,
+    40.7,
+    40.78,
+    40.85,
+    40.98
+   ]
+  },
+  "X15": {
+   "name": "PCE pH",
+   "unit": "-",
+   "min": 1.08,
+   "max": 3.91,
+   "constant": false,
+   "default": 3.91,
+   "levels": [
+    1.08,
+    2.54,
+    2.61,
+    2.65,
+    2.91,
+    2.93,
+    2.94,
+    2.97,
+    3.21,
+    3.24,
+    3.26,
+    3.54,
+    3.58,
+    3.91
+   ]
+  },
+  "X16": {
+   "name": "PCE Mw",
+   "unit": "g/mol",
+   "min": 52000.0,
+   "max": 65000.0,
+   "constant": false,
+   "default": 55000.0,
+   "levels": [
+    52000.0,
+    53000.0,
+    54000.0,
+    55000.0,
+    56000.0,
+    56100.0,
+    58000.0,
+    60000.0,
+    61000.0,
+    62000.0,
+    62100.0,
+    63000.0,
+    65000.0
+   ]
+  },
+  "X17": {
+   "name": "PCE PDI",
+   "unit": "-",
+   "min": 2.0,
+   "max": 2.4,
+   "constant": false,
+   "default": 2.1,
+   "levels": [
+    2.0,
+    2.1,
+    2.2,
+    2.3,
+    2.4
+   ]
+  },
+  "X18": {
+   "name": "PCE viscosity",
+   "unit": "dataset scale",
+   "min": 134.0,
+   "max": 192.0,
+   "constant": false,
+   "default": 154.0,
+   "levels": [
+    134.0,
+    154.0,
+    155.0,
+    156.0,
+    158.0,
+    162.0,
+    164.0,
+    168.0,
+    170.0,
+    174.0,
+    178.0,
+    180.0,
+    188.0,
+    192.0
+   ]
+  },
+  "X19": {
+   "name": "Cement",
+   "unit": "g",
+   "min": 385.0,
+   "max": 700.0,
+   "constant": false,
+   "default": 700.0,
+   "levels": [
+    385.0,
+    490.0,
+    595.0,
+    700.0
+   ]
+  },
+  "X20": {
+   "name": "Fly ash",
+   "unit": "g",
+   "min": 0.0,
+   "max": 315.0,
+   "constant": false,
+   "default": 0.0,
+   "levels": [
+    0.0,
+    105.0,
+    210.0,
+    315.0
+   ]
+  },
+  "X21": {
+   "name": "PCE dosage",
+   "unit": "g",
+   "min": 3.5,
+   "max": 14.0,
+   "constant": false,
+   "default": 3.5,
+   "levels": [
+    3.5,
+    5.25,
+    7.0,
+    8.75,
+    10.5,
+    12.25,
+    14.0
+   ]
+  },
+  "X22": {
+   "name": "Water",
+   "unit": "g",
+   "min": 245.0,
+   "max": 245.0,
+   "constant": true,
+   "default": 245.0,
+   "levels": [
+    245.0
+   ]
+  }
+ }
+}

@@ -1,0 +1,15 @@
+Setting,Value
+Algorithm,"Equilibrium Optimizer, mealpy OriginalEO (Faramarzi et al., 2020)"
+Population size (search agents),20
+Iterations,100
+Objective evaluations per run,20 + 100 x (20 + 1) = 2120
+a1 (exploration constant),2
+a2 (exploitation constant),1
+GP (generation probability),0.5
+V (control volume),1
+Equilibrium pool,4 best agents + their average
+Stopping criterion,fixed number of iterations
+Integer decoding,rounding to nearest integer within bounds
+Objective,mean MSE over 3-fold inner CV of the outer-training data (preprocessing + mRMR refitted in each inner fold)
+Random seeds,one seed per outer fold (derived from base seed 42); sensitivity: 5 independent seeds
+Random search / TPE budget,same number of objective evaluations as EO

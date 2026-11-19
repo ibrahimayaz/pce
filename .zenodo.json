@@ -1,0 +1,57 @@
+{
+  "title": "Dataset, code and trained models for: Predicting Marsh Funnel Flow Time and Mini-Slump of Fly Ash–Cement Pastes from PCE Superplasticizer Descriptors: Equilibrium Optimizer-Tuned Models under Nested and Leave-One-Admixture-Out Validation with SHAP Interpretation",
+  "upload_type": "software",
+  "description": "Experimental dataset (616 cement–fly ash–PCE pastes), leakage-free nested validation pipeline (revision/), trained models, the Flask GUI and the Gradio app of the online GUI (https://huggingface.co/spaces/ibrahimayaz/pce-predictor). Dataset: https://dx.doi.org/10.21227/fjdp-ss56",
+  "creators": [
+    {
+      "name": "Ayaz, İbrahim",
+      "affiliation": "Bitlis Eren University"
+    },
+    {
+      "name": "Ekinci, Serdar",
+      "affiliation": "Bitlis Eren University"
+    },
+    {
+      "name": "Izci, Davut",
+      "affiliation": "Bursa Uludag University"
+    },
+    {
+      "name": "Abdel-Salam, Mahmoud",
+      "affiliation": "Mansoura University"
+    },
+    {
+      "name": "Şahin, Muhammed İkbal",
+      "affiliation": "Bursa Uludag University"
+    },
+    {
+      "name": "Çoban, Hakan",
+      "affiliation": "Bitlis Eren University"
+    },
+    {
+      "name": "Özteber, Selin",
+      "affiliation": "Bursa Uludag University"
+    },
+    {
+      "name": "Mardani, Ali",
+      "affiliation": "Bursa Uludag University"
+    }
+  ],
+  "license": "cc-by-nc-4.0",
+  "keywords": [
+    "fly ash",
+    "polycarboxylate ether",
+    "Marsh funnel",
+    "mini-slump",
+    "machine learning",
+    "equilibrium optimizer",
+    "SHAP"
+  ],
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "10.21227/fjdp-ss56",
+      "relation": "isSupplementedBy",
+      "scheme": "doi"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+ "explainer": "TreeExplainer (exact, polynomial-time Tree SHAP)",
+ "feature_perturbation": "tree_path_dependent",
+ "background": "none required: conditional expectations from the training-sample cover stored in each tree",
+ "explained_samples": 252,
+ "base_value": 18.631580933242475,
+ "seconds": 0.1,
+ "additivity_max_abs_error": 3.552713678800501e-15,
+ "model": "CatBoost",
+ "target": "Y2",
+ "features": [
+  "X21",
+  "X19",
+  "X18",
+  "X20",
+  "X17",
+  "X14",
+  "X15",
+  "X13",
+  "X16"
+ ],
+ "note": "SHAP values are computed on the standardised model inputs; plots show the corresponding values in original units (standardisation is monotonic).",
+ "interactions": "computed (diagonal = main effects)",
+ "corr_X13_X21_in_data": 0.0
+}

@@ -1,0 +1,23 @@
+feature,name,zero_variance,relevance_F,relevance_p,rank_relevance_F,relevance_MI,rank_MI,redundancy_at_selection,mrmr_score_at_selection,mrmr_rank,selected_top9,note
+X21,PCE dosage,False,78.36767655250925,1.6060660395231344e-16,1.0,0.22279317208057137,1.0,,78.36767655250925,1.0,True,
+X19,Cement,False,27.541818923739633,3.2825107138467547e-07,2.0,0.14413331487915082,8.0,0.001,27541.818923739633,2.0,True,
+X18,PCE viscosity,False,8.115364025874781,0.0047545428426987195,4.0,0.19822594477028543,2.0,0.001,8115.364025874781,3.0,True,
+X20,Fly ash,False,27.541818923739378,3.2825107138472174e-07,3.0,0.15376769813913604,6.0,0.3339999999999999,82.46053569981852,4.0,True,
+X17,PCE PDI,False,3.6290660241845267,0.05792616484603586,5.0,0.0955266176058398,9.0,0.08876366684335384,40.88458885535836,5.0,True,
+X14,PCE solid content,False,0.6026066037894023,0.4383190038990059,7.0,0.16999391840084588,5.0,0.018139239949742127,33.22116061417277,6.0,True,
+X15,PCE pH,False,1.711830462700882,0.19194964633507589,6.0,0.18501949309866283,3.0,0.12178101583740769,14.056628210314665,7.0,True,
+X13,PCE density,False,0.11532435757391121,0.7344471100279704,8.0,0.14950906570657763,7.0,0.2417997607412378,0.47694157024963174,8.0,True,
+X16,PCE Mw,False,0.06743516142768699,0.7953221773934376,9.0,0.18422215806803388,4.0,0.21554192483183815,0.31286331640723103,9.0,True,
+X1,C3S,True,,,,,,,,,False,zero variance (constant) - not selectable
+X10,CaO (fly ash),True,,,,,,,,,False,zero variance (constant) - not selectable
+X11,Specific surface area of fly ash,True,,,,,,,,,False,zero variance (constant) - not selectable
+X12,Specific gravity of fly ash,True,,,,,,,,,False,zero variance (constant) - not selectable
+X2,C2S,True,,,,,,,,,False,zero variance (constant) - not selectable
+X22,Water,True,,,,,,,,,False,zero variance (constant) - not selectable
+X3,C3A,True,,,,,,,,,False,zero variance (constant) - not selectable
+X4,C4AF,True,,,,,,,,,False,zero variance (constant) - not selectable
+X5,Specific surface area of cement,True,,,,,,,,,False,zero variance (constant) - not selectable
+X6,Specific gravity of cement,True,,,,,,,,,False,zero variance (constant) - not selectable
+X7,SiO2 (fly ash),True,,,,,,,,,False,zero variance (constant) - not selectable
+X8,Al2O3 (fly ash),True,,,,,,,,,False,zero variance (constant) - not selectable
+X9,Fe2O3 (fly ash),True,,,,,,,,,False,zero variance (constant) - not selectable

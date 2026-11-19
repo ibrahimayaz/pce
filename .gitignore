@@ -21,3 +21,12 @@ Thumbs.db
 
 # Office lock files
 ~$*
+
+# Manuscript, response letter and revision notes (private until publication)
+Manuscript-Access.docx
+Response_to_Reviewers*.docx
+REVISION_PLAN.md
+manuscript_revised/
+
+# Local test environments of the Hugging Face Space
+deploy/hf_space/.gradio/

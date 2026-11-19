@@ -79,14 +79,23 @@
 
         {% if result %}
             <section class="results">
+                {% for t in ['Y1', 'Y2'] %}
                 <article class="result-card">
-                    <h2>Predicted Y1 (Marsh Funnel Flow Time)</h2>
-                    <p>{{ '%.6f'|format(result['Y1']) }}</p>
+                    <h2>Predicted {{ t }} ({{ target_labels[t][0] }})</h2>
+                    <p>{{ '%.2f'|format(result[t]) }} {{ target_labels[t][1] }}</p>
                 </article>
-                <article class="result-card">
-                    <h2>Predicted Y2 (Mini Slump Value)</h2>
-                    <p>{{ '%.6f'|format(result['Y2']) }}</p>
-                </article>
+                {% endfor %}
+            </section>
+            {% if warnings %}
+            <section class="alert alert-error">
+                <h2>Extrapolation warning</h2>
+                {% for w in warnings %}<p>{{ w }}</p>{% endfor %}
+            </section>
+            {% endif %}
+            <section class="panel">
+                <p><small>Predictions are reliable only within the experimental range of the dataset
+                (one cement, one fly ash, w/b = 0.35). Accuracy for an admixture that was not part of the
+                training data is lower; see the leave-one-PCE-out results in the article.</small></p>
             </section>
         {% endif %}
 

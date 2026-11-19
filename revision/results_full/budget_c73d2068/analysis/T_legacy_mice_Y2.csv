@@ -1,0 +1,5 @@
+Model,Tuner,Original procedure: scored on all rows (incl. imputed targets),Original procedure: scored on measured rows only,Original procedure: imputed rows only,imputed target range,"Corrected procedure (measured only, nested)",n_imputed_target_rows
+CatBoost,Default,R2 0.9998 / RMSE 0.3799,R2 0.7944 / RMSE 0.4626,R2 0.9999 / RMSE 0.3100,"[-48.11, 19.83]",R2 0.7900 / RMSE 0.4676,1092
+LightGBM,Default,R2 0.9998 / RMSE 0.3566,R2 0.7740 / RMSE 0.4850,R2 0.9999 / RMSE 0.2286,"[-48.11, 19.83]",R2 0.7129 / RMSE 0.5467,1092
+CatBoost,EO,R2 0.9998 / RMSE 0.3632,R2 0.7301 / RMSE 0.5300,R2 1.0000 / RMSE 0.1694,"[-48.11, 19.83]",R2 0.7985 / RMSE 0.4580,1092
+LightGBM,EO,R2 0.9998 / RMSE 0.3573,R2 0.7585 / RMSE 0.5014,R2 0.9999 / RMSE 0.2050,"[-48.11, 19.83]",R2 0.7316 / RMSE 0.5286,1092
